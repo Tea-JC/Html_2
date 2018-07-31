@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表格跨行和跨列</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+	<body>
+	
+		<table border="1"  width="500px" bgcolor="#f2f2f2" cellspacing="0" cellpadding="10px" align="center">
+		
+		<caption>前端工程师平均工资</caption>
+			<thead>  
+			<tr bgcolor="#d8e4bc">  
+				<th rowspan="2">城市</th>    <!--rowspan:跨行-->
+				<th colspan="2">2016年</th>  <!--colspan:跨列，跨多少列就减多少列-->
+			    <th rowspan="2">2017年</th>
+				<th rowspan="2">2018年</th>
+			</tr>
+			<tr bgcolor="#d8e4bc">  
+			
+				<th>上半年</th>
+				<th>下半年</th>
+			    
+			</tr>
+		</thead>
+       
+		<tbody align="center" valign="center">
+			<tr>
+				<td bgcolor="#b8cce4">北京</td>
+				<td>6000</td>
+				<td>8000</td>
+				<td>12000</td>
+				<td>16000</td>
+			</tr>
+			<tr>
+				<td bgcolor="#b8cce4">上海</td>
+				<td>6000</td>
+				<td>8000</td>
+				<td>12000</td>
+				<td>16000</td>
+			</tr>
+		</tbody>
+      
+		<tfoot>
+			<tr align="center" valign="center">
+				<td bgcolor="#b8cce4">合计</td>
+				<td>6000</td>
+				<td>8000</td>
+				<td>12000</td>
+				<td>16000</td>
+			</tr>
+		</tfoot>
+		</table>
+	</body>
+</html>
